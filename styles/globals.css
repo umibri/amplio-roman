@@ -67,7 +67,7 @@
   }
 
   .inputEleContainer {
-    @apply flex flex-col justify-evenly items-center;
+    @apply flex flex-col justify-evenly items-center mx-auto;
   }
 
   .inputElement {
