@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply p-0 m-0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+  a {
+    @apply text-yellow-400 no-underline;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    @apply text-white underline;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  h1 {
+    @apply text-3xl text-center my-2 mx-4;
+  }
+
+  h2 {
+    @apply text-2xl flex flex-col items-center text-center col-span-2 mb-4;
+  }
+
+  main {
+    @apply flex flex-col justify-between items-center;
+  }
+
+  footer {
+    @apply text-center pb-6;
+  }
+
+  footer ul {
+    @apply flex justify-center gap-8 text-sm;
+  }
+}
+
+@layer components {
+  .rootContainer {
+    @apply flex flex-col justify-center w-screen h-screen overflow-y-hidden items-stretch text-white bg-custom-black;
+  }
+
+  .romanForm {
+    @apply flex flex-col max-w-roman max-h-roman w-90vw h-c487 rounded-2xl shadow-lg m-2 p-6 border border-zinc-700 bg-dk-gray;
+  }
+
+  .inputContainer {
+    @apply grid grid-cols-2 col-span-2 h-3/5 mb-4;
+  }
+
+  .inputLegend {
+    @apply text-center mb-2;
+  }
+
+  .inputFieldset {
+    @apply flex col-span-2 justify-evenly items-stretch;
+  }
+
+  .inputEleContainer {
+    @apply flex flex-col justify-evenly items-center;
+  }
+
+  .inputElement {
+    @apply bg-stone-600 text-white text-center p-2 mb-4 mx-auto w-5/6 rounded-md;
+  }
+
+  .inputElement:active,
+  .inputElement:focus,
+  .inputElement:target,
+  .inputElement:focus-visible {
+    @apply outline-1 outline-amber-400;
+  }
+
+  .inputBtnContainer {
+    @apply flex justify-evenly col-span-2;
+  }
+
+  .inputBtn {
+    @apply bg-transparent border border-amber-400 w-5/12 h-12 text-white p-2 mx-auto rounded-lg transition-all text-sm font-semibold;
+  }
+
+  .inputBtn:hover,
+  .inputBtn:active {
+    @apply text-black bg-amber-400;
+  }
+
+  .outputContainer {
+    @apply bg-stone-600 flex flex-col col-span-2 p-4 rounded-lg text-lg h-2/6;
+  }
+
+  #out {
+    @apply flex justify-center items-center mx-auto my-2 tracking-wide text-center w-4/5 text-xl;
+  }
+}
