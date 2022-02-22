@@ -64,7 +64,7 @@ describe('Num to Roman', () => {
     expect(json.mock.calls[0][0].message).toEqual("567 = DLXVII");
   });
 ```
-<img src='https://i.imgur.com/N5wiHGr.pngs' alt='' width='600'/>
+<img src='https://i.imgur.com/N5wiHGr.pngs' alt='' width='550'/>
 
 &nbsp;
 &nbsp;
