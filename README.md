@@ -1,6 +1,6 @@
 # Brian Uminga - Amplio Assignment - When In Rome
 
-**Demo:** Link
+**Demo:** https://amplio-roman.vercel.app/
 
 &nbsp;
 &nbsp;
@@ -64,7 +64,7 @@ describe('Num to Roman', () => {
     expect(json.mock.calls[0][0].message).toEqual("567 = DLXVII");
   });
 ```
-<img src='https://i.imgur.com/N5wiHGr.pngs' alt='' width='200'/>
+<img src='https://i.imgur.com/N5wiHGr.pngs' alt='' width='600'/>
 
 &nbsp;
 &nbsp;
